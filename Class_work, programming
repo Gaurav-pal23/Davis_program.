@@ -1,0 +1,19 @@
+# write a program of 20 users take data input and perform write operation
+
+filename = "users_data.txt"
+
+# 'w' mode file ko overwrite karega, agar append karna hai toh 'a' use karein
+with open(filename, "w") as filev:
+    print(f"Plese enter details for 20 users:")
+    
+    for i in range(1, 21):
+        # User se input lena
+        user_name = input(f"Enter name for User {i}: ")
+        
+        # Data ko file mein write karna
+        # \n ka use kiya hai taki har user ka naam nayi line (new line) par aaye
+        filev.write(f"User {i}: {user_name}\n")
+        
+        print(f"--- User {i} saved ---")
+
+print("\nAll 20 users have been successfully saved to", filename)
