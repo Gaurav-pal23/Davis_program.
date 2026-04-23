@@ -1,0 +1,12 @@
+Import numpy as np
+#first array
+array1=np.array({10,20,40,50})
+#-----------------------
+print("first array : ")
+print(array1)
+print ("---------------------")
+#finding mean 
+average= np. mean(array1) 
+print("average : ",average) 
+#-----------------------------
+#median- to find out middle element when elements are arranged in sorted order
